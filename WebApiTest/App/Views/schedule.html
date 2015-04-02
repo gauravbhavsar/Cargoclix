@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html ng-app="scheduleApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Schedule</title>
+
+    <script src="../angular.min.js"></script>
+    <script src="../angular-resource.js"></script>
+
+    <script src="../Modules/app.js"></script>
+</head>
+<body ng-cloak>
+    <div ng-controller="scheduleController">
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{schedule.Task}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>

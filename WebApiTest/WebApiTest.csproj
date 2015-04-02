@@ -297,9 +297,12 @@
     <Compile Include="ViewModels\UserVIewModels.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\angular-resource.js" />
+    <Content Include="App\angular.min.js" />
     <Content Include="App\Modules\app.js" />
     <Content Include="App\Controllers\scheduleController.js" />
     <Content Include="App\Services\scheduleServices.js" />
+    <Content Include="App\Views\schedule.html" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />

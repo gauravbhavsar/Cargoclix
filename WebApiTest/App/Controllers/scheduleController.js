@@ -7,7 +7,7 @@
 
     scheduleController.$inject = ['$scope', 'Schedules'];
 
-    function moviesController($scope, Schedules) {
+    function scheduleController($scope, Schedules) {
         $scope.schedules = Schedules.query();
     }
 })();

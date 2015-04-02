@@ -297,6 +297,9 @@
     <Compile Include="ViewModels\UserVIewModels.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\app.js" />
+    <Content Include="App\Controllers\scheduleController.js" />
+    <Content Include="App\scheduleServices.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />

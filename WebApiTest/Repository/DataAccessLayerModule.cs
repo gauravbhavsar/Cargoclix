@@ -5,7 +5,7 @@ namespace WebApiTest.Repository {
         protected override void Load(ContainerBuilder builder) {
             builder.RegisterType<ScheduleRepository>().As<IScheduleRepository>();
             builder.RegisterType<DeliveryRepository>().As<IDeliveryRepository>();
-            builder.RegisterType<NotesRepository>().As<IDeliveryRepository>();
+            builder.RegisterType<NotesRepository>().As<INotesRepository>();
             builder.RegisterType<ETARepository>().As<IETARepository>();
             builder.RegisterType<DriverRepository>().As<IDriverRepository>();
             builder.RegisterType<OwnerRepository>().As<IOwnerRepository>();

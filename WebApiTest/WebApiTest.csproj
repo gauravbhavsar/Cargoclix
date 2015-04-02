@@ -239,8 +239,8 @@
     <Compile Include="Controllers\ETAController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NotesController.cs" />
+    <Compile Include="Controllers\OwnerController.cs" />
     <Compile Include="Controllers\ScheduleController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Extensions\DeliveryExtension.cs" />
     <Compile Include="Extensions\ETAExtension.cs" />
     <Compile Include="Extensions\NotesExtension.cs" />
@@ -299,9 +299,9 @@
   <ItemGroup>
     <Content Include="App\angular-resource.js" />
     <Content Include="App\angular.min.js" />
-    <Content Include="App\Modules\app.js" />
+    <Content Include="App\app.js" />
     <Content Include="App\Controllers\scheduleController.js" />
-    <Content Include="App\Services\scheduleServices.js" />
+    <Content Include="App\Services\scheduleService.js" />
     <Content Include="App\Views\schedule.html" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
@@ -364,6 +364,7 @@
     <Folder Include="Views\Delivery\" />
     <Folder Include="Views\ETA\" />
     <Folder Include="Views\Notes\" />
+    <Folder Include="Views\Owner\" />
     <Folder Include="Views\Schedule\" />
   </ItemGroup>
   <ItemGroup>

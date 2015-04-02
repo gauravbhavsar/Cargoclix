@@ -17,6 +17,7 @@ namespace WebApiTest.Extensions {
 
         public static OwnerCreateCommand ToCommand(this OwnerCreateViewModel model) {
             return new OwnerCreateCommand() {
+                Password = model.Password,
                 Email = model.Email,
                 PhoneNumber = model.PhoneNumber,
                 UserName = model.UserName
@@ -33,6 +34,7 @@ namespace WebApiTest.Extensions {
 
         public static Owner ToEntity(this OwnerCreateCommand command) {
             var entity = new Owner {
+                PasswordHash = command.Password,
                 Email = command.Email,
                 PhoneNumber = command.PhoneNumber,
                 UserName = command.UserName,

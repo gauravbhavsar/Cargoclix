@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
+using WebApiTest.Repository;
 
 namespace WebApiTest.Models
 {
@@ -18,7 +19,7 @@ namespace WebApiTest.Models
         }
     }
 
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext:IdentityDbContext<ApplicationUser>, IApplicationDataContext
     {
         public ApplicationDbContext()
             : base("CLIX", throwIfV1Schema: false)

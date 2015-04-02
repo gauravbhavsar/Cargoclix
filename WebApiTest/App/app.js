@@ -1,8 +1,7 @@
-﻿
-(function () {
+﻿(function () {
     'use strict';
 
     angular.module('scheduleApp', [
-        'scheduleServices'
+    'scheduleService'
     ]);
 })();

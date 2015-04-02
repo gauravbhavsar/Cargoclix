@@ -8,8 +8,8 @@ using System.Web.Mvc;
 using System.Web.Http;
 using WebApiTest.Services;
 
-namespace assetry {
-    public class iochelper {
+namespace WebApiTest {
+    public class IocHelper {
 
         public static IContainer CreateContainer() {
             var builder = new ContainerBuilder();

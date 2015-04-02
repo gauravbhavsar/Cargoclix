@@ -5,9 +5,9 @@
         .module('scheduleApp')
         .controller('scheduleController', scheduleController);
 
-    scheduleController.$inject = ['$scope', 'Schedules'];
+    scheduleController.$inject = ['$scope', 'schedule'];
 
-    function scheduleController($scope, Schedules) {
-        $scope.schedules = Schedules.query();
+    function scheduleController($scope, schedule) {
+        $scope.schedule = schedule.query();
     }
 })();

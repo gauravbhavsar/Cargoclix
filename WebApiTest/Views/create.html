@@ -1,0 +1,17 @@
+﻿<script>
+    var model = {
+    Created
+    When
+    Task
+    OwnerId 
+    DriverId
+    }
+    $.ajax({
+        type: 'PUT',
+        url: '~/api/schedule',
+        data: model,
+        success:function(){
+            console.log('yiipeeee');
+        }
+    })
+</script>

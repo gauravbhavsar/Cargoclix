@@ -7,7 +7,8 @@ namespace WebApiTest.Repository {
             builder.RegisterType<DeliveryRepository>().As<IDeliveryRepository>();
             builder.RegisterType<NotesRepository>().As<IDeliveryRepository>();
             builder.RegisterType<ETARepository>().As<IETARepository>();
-            builder.RegisterType<UserRepository>().As<IUserRepository>();
+            builder.RegisterType<DriverRepository>().As<IDriverRepository>();
+            builder.RegisterType<OwnerRepository>().As<IOwnerRepository>();
         }
     }
 }

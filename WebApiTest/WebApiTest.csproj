@@ -244,7 +244,9 @@
     <Compile Include="Extensions\DeliveryExtension.cs" />
     <Compile Include="Extensions\ETAExtension.cs" />
     <Compile Include="Extensions\NotesExtension.cs" />
+    <Compile Include="Extensions\OwnerExtension.cs" />
     <Compile Include="Extensions\ScheduleExtension.cs" />
+    <Compile Include="Extensions\DriverExtension.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -267,29 +269,32 @@
     <Compile Include="Models\DefaultDataEventManager.cs" />
     <Compile Include="Repository\DataAccessLayerModule.cs" />
     <Compile Include="Repository\DeliveryRepository.cs" />
+    <Compile Include="Repository\DriverRepository.cs" />
     <Compile Include="Repository\EntityFrameworkBaseRepository.cs" />
     <Compile Include="Models\IApplicationDataContext.cs" />
     <Compile Include="Repository\ETARepository.cs" />
     <Compile Include="Repository\IRepository`.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\NotesRepository.cs" />
+    <Compile Include="Repository\OwnerRepository.cs" />
     <Compile Include="Repository\ScheduleRepository.cs" />
-    <Compile Include="Repository\UserRepository.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Services\DataServiceBase.cs" />
     <Compile Include="Services\DeliveryService.cs" />
+    <Compile Include="Services\DriverService.cs" />
     <Compile Include="Services\ETAService.cs" />
     <Compile Include="Services\IDataService.cs" />
     <Compile Include="Services\IService.cs" />
     <Compile Include="Services\NotesService.cs" />
+    <Compile Include="Services\OwnerService.cs" />
     <Compile Include="Services\ScheduleService.cs" />
     <Compile Include="Services\ServicesModule.cs" />
-    <Compile Include="Services\UserService.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\DeliveryViewModel.cs" />
     <Compile Include="ViewModels\ETAViewModel.cs" />
     <Compile Include="ViewModels\NotesViewModel.cs" />
     <Compile Include="ViewModels\ScheduleViewModel.cs" />
+    <Compile Include="ViewModels\UserVIewModels.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />

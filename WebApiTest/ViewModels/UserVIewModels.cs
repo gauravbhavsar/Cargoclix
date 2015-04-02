@@ -3,46 +3,52 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace WebApiTest.Commands {
-    public interface IOwnerCommand {
-
-    }
-
-    public class OwnerCreateCommand:ICreateCommand, IOwnerCommand {
-        public string Email { get; set; }
-        public string PhoneNumber { get; set; }
-        public string UserName { get; set; }
-    }
-
-    public class OwnerUpdateCommand:IUpdateCommand<int>, IOwnerCommand {
+namespace WebApiTest.ViewModels {
+    public class OwnerViewModel {
         public int Id { get; set; }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public string UserName { get; set; }
     }
 
-    public class OwnerDeleteCommand:IDeleteCommand<int>, IOwnerCommand {
-        public int Id { get; set; }
-    }
-
-    public class IDriverCommand {
-
-    }
-
-    public class DriverCreateCommand:ICreateCommand, IOwnerCommand {
+    public class OwnerCreateViewModel {
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public string UserName { get; set; }
     }
 
-    public class DriverUpdateCommand:IUpdateCommand<int>, IOwnerCommand {
+    public class OwnerUpdateViewModel {
         public int Id { get; set; }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public string UserName { get; set; }
     }
 
-    public class DriverDeleteCommand:IDeleteCommand<int>, IOwnerCommand {
+    public class OwnerDeleteViewModel {
+        public int Id { get; set; }
+    }
+
+    public class DriverViewModel {
+        public int Id { get; set; }
+        public string Email { get; set; }
+        public string PhoneNumber { get; set; }
+        public string UserName { get; set; }
+    }
+
+    public class DriverCreateViewModel {
+        public string Email { get; set; }
+        public string PhoneNumber { get; set; }
+        public string UserName { get; set; }
+    }
+
+    public class DriverUpdateViewModel {
+        public int Id { get; set; }
+        public string Email { get; set; }
+        public string PhoneNumber { get; set; }
+        public string UserName { get; set; }
+    }
+
+    public class DriverDeleteViewModel {
         public int Id { get; set; }
     }
 }

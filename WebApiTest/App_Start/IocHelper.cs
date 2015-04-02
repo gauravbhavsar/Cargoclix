@@ -22,7 +22,6 @@ namespace assetry {
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
             GlobalConfiguration.Configuration.DependencyResolver = new AutofacWebApiDependencyResolver(container);
-
             return container;
         }
     }

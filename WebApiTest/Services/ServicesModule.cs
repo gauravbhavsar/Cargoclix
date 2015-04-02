@@ -8,6 +8,8 @@ namespace WebApiTest.Services {
             builder.RegisterType<DeliveryService>().As<IDeliveryService>();
             builder.RegisterType<NotesService>().As<INotesService>();
             builder.RegisterType<ETAService>().As<IETAService>();
+            builder.RegisterType<DriverService>().As<IDriverService>();
+            builder.RegisterType<OwnerService>().As<IOwnerService>();
         }
     }
 }

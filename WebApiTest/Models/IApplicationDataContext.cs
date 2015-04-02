@@ -2,7 +2,7 @@
 using System.Data.Entity.Infrastructure;
 using System.Threading.Tasks;
 
-namespace WebApiTest.Repository {
+namespace WebApiTest.Models {
     public interface IApplicationDataContext {
         int SaveChanges();
         Task<int> SaveChangesAsync();

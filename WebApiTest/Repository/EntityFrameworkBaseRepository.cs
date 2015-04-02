@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApiTest.Models;
 
 namespace WebApiTest.Repository {
     public abstract class EfRepository<TEntity, TKey>:IRepository<TEntity, TKey> where TEntity:class {

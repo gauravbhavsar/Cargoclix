@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using WebApiTest.Commands;
+﻿using WebApiTest.Commands;
 using WebApiTest.Models;
 using WebApiTest.Extensions;
 using WebApiTest.ViewModels;
 using WebApiTest.Repository;
 
-namespace WebApiTest.Services {
+namespace WebApiTest.Services
+{
     public interface IScheduleService:IDataService<Schedule, int, ScheduleUpdateCommand, ScheduleCreateCommand, ScheduleDeleteCommand> {
         ScheduleViewModel ById(int id);
     }
